@@ -6,7 +6,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
 		<script src="jquery-3.1.1.min.js"></script>
 		<script>
 		function validateForm() {
@@ -25,64 +25,64 @@
     <h1><center>Take this short quiz to find out how much of a gamer you are.</center></h1>
     </header>
     <div id="container">
-    <form>
+    <form action="" name="Questions">
       <div class="question_box" id="q1">
         <div class="question_text"><h1>1. How often do you play games?</h1></div>
         <table>
-          <tr><td><input type="radio" name="q1" value="1"></td><td><h1>Once a week</h1></td></tr>
-          <tr><td><input type="radio" name="q1" value="2"></td><td><h1>Often</h1></td></tr>
-          <tr><td><input type="radio" name="q1" value="0"></td><td><h1>I don't game</h1></td></tr>
-          <tr><td><input type="radio" name="q1" value="3"></td><td><h1>I don't have a life.</h1></td></tr>
+          <tr><td><input type="radio" name="q1" id="q1" value="1"></td><td><h1>Once a week</h1></td></tr>
+          <tr><td><input type="radio" name="q1" id="q1" value="2"></td><td><h1>Often</h1></td></tr>
+          <tr><td><input type="radio" name="q1" id="q1" value="0"></td><td><h1>I don't game</h1></td></tr>
+          <tr><td><input type="radio" name="q1" id="q1" value="3"></td><td><h1>I don't have a life.</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q2">
         <div class="question_text"><h1>2. FPS means :</h1></div>
         <table>
-          <tr><td><input type="radio" name="q2" value="1"></td><td><h1>First person shooting</h1></td></tr>
-          <tr><td><input type="radio" name="q2" value="0"></td><td><h1>I don't know</h1></td></tr>
-          <tr><td><input type="radio" name="q2" value="2"></td><td><h1>Somthing similar to call of duty</h1></td></tr>
-          <tr><td><input type="radio" name="q2" value="3"></td><td><h1>First person shooter</h1></td></tr>
+          <tr><td><input type="radio" name="q2" id="q2" value="1"></td><td><h1>First person shooting</h1></td></tr>
+          <tr><td><input type="radio" name="q2" id="q2" value="0"></td><td><h1>I don't know</h1></td></tr>
+          <tr><td><input type="radio" name="q2" id="q2" value="2"></td><td><h1>Somthing similar to call of duty</h1></td></tr>
+          <tr><td><input type="radio" name="q2" id="q2" value="3"></td><td><h1>First person shooter</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q3">
         <div class="question_text"><h1>3. What is an RPG game?</h1></div>
         <table>
-          <tr><td><input type="radio" name="q3" value="3"></td><td><h1>Role playing game</h1></td></tr>
-          <tr><td><input type="radio" name="q3" value="2"></td><td><h1>Sword art online hollow fragment</h1></td></tr>
-          <tr><td><input type="radio" name="q3" value="0"></td><td><h1>I don't know</h1></td></tr>
-          <tr><td><input type="radio" name="q3" value="0"></td><td><h1>A weapon</h1></td></tr>
+          <tr><td><input type="radio" name="q3" id="q3" value="3"></td><td><h1>Role playing game</h1></td></tr>
+          <tr><td><input type="radio" name="q3" id="q3" value="2"></td><td><h1>Sword art online hollow fragment</h1></td></tr>
+          <tr><td><input type="radio" name="q3" id="q3" value="0"></td><td><h1>I don't know</h1></td></tr>
+          <tr><td><input type="radio" name="q3" id="q3" value="0"></td><td><h1>A weapon</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q4">
         <div class="question_text"><h1>4. Have you called in sick or late to work or skipped classes to game? </h1></div>
         <table>
-          <tr><td><input type="radio" name="q4" value="3"></td><td><h1>Totally</h1></td></tr>
-          <tr><td><input type="radio" name="q4" value="0"></td><td><h1>Nope</h1></td></tr>
-          <tr><td><input type="radio" name="q4" value="2"></td><td><h1>Sometimes</h1></td></tr>
-          <tr><td><input type="radio" name="q4" value="1"></td><td><h1>Barely</h1></td></tr>
+          <tr><td><input type="radio" name="q4" id="q4" value="3"></td><td><h1>Totally</h1></td></tr>
+          <tr><td><input type="radio" name="q4" id="q4" value="0"></td><td><h1>Nope</h1></td></tr>
+          <tr><td><input type="radio" name="q4" id="q4" value="2"></td><td><h1>Sometimes</h1></td></tr>
+          <tr><td><input type="radio" name="q4" id="q4" value="1"></td><td><h1>Barely</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q5">
         <div class="question_text"><h1>5. Do you forget appointments, responsibilities or deadlines in work or school when gaming?</h1></div>
         <table>
-          <tr><td><input type="radio" name="q5" value="1"></td><td><h1>Nope</h1></td></tr>
-          <tr><td><input type="radio" name="q5" value="0"></td><td><h1>Never in my whole life</h1></td></tr>
-          <tr><td><input type="radio" name="q5" value="2"></td><td><h1>Yes</h1></td></tr>
-          <tr><td><input type="radio" name="q5" value="3"></td><td><h1>definitely</h1></td></tr>
+          <tr><td><input type="radio" name="q5" id="q5" value="1"></td><td><h1>Nope</h1></td></tr>
+          <tr><td><input type="radio" name="q5" id="q5" value="0"></td><td><h1>Never in my whole life</h1></td></tr>
+          <tr><td><input type="radio" name="q5" id="q5" value="2"></td><td><h1>Yes</h1></td></tr>
+          <tr><td><input type="radio" name="q5" id="q5" value="3"></td><td><h1>definitely</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q6">
         <div class="question_text"><h1>6. Please choose how you CURRENTLY play MOST of your games.</h1></div>
         <table>
-          <tr><td><input type="radio" name="q6" value="2"></td><td><h1>Xbox</h1> </td></tr>
-          <tr><td><input type="radio" name="q6" value="2"></td><td><h1>Playstation</h1></td></tr>
-          <tr><td><input type="radio" name="q6" value="0"></td><td><h1>phone or tablet</h1> </td></tr>
-          <tr><td><input type="radio" name="q6" value="3"></td><td><h1>Computer</h1></td></tr>
+          <tr><td><input type="radio" name="q6" id="q6" value="2"></td><td><h1>Xbox</h1> </td></tr>
+          <tr><td><input type="radio" name="q6" id="q6" value="2"></td><td><h1>Playstation</h1></td></tr>
+          <tr><td><input type="radio" name="q6" id="q6" value="0"></td><td><h1>phone or tablet</h1> </td></tr>
+          <tr><td><input type="radio" name="q6" id="q6" value="3"></td><td><h1>Computer</h1></td></tr>
         </table>
       </div>
 
@@ -91,92 +91,87 @@
 		</h1>
 		</div>
         <table>
-          <tr><td><input type="radio" name="q7" value="0"></td><td><h1>£0-£39</h1></td></tr>
-          <tr><td><input type="radio" name="q7" value="1"></td><td><h1>£40-£799</h1></td></tr>
-          <tr><td><input type="radio" name="q7" value="2"></td><td><h1>£800-£999</h1></td></tr>
-          <tr><td><input type="radio" name="q7" value="3"></td><td><h1>£1000+</h1></td></tr>
+          <tr><td><input type="radio" name="q7" id="q7" value="0"></td><td><h1>£0-£39</h1></td></tr>
+          <tr><td><input type="radio" name="q7" id="q7" value="1"></td><td><h1>£40-£799</h1></td></tr>
+          <tr><td><input type="radio" name="q7" id="q7" value="2"></td><td><h1>£800-£999</h1></td></tr>
+          <tr><td><input type="radio" name="q7" id="q7" value="3"></td><td><h1>£1000+</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q8">
         <div class="question_text"><h1>8. Do you pretend to be busy?</h1></div>
         <table>
-          <tr><td><input type="radio" name="q8" value="2"></td><td><h1>I am poor!</h1></td></tr>
-          <tr><td><input type="radio" name="q8" value="3"></td><td><h1>Sometimes.</h1></td></tr>
-          <tr><td><input type="radio" name="q8" value="1"></td><td><h1>I am a busy person.</h1>> </td></tr>
-          <tr><td><input type="radio" name="q8" value="0"></td><td><h1>Never.<h1></td></tr>
+          <tr><td><input type="radio" name="q8" id="q8" value="2"></td><td><h1>I am poor!</h1></td></tr>
+          <tr><td><input type="radio" name="q8" id="q8" value="3"></td><td><h1>Sometimes.</h1></td></tr>
+          <tr><td><input type="radio" name="q8" id="q8" value="1"></td><td><h1>I am a busy person.</h1>> </td></tr>
+          <tr><td><input type="radio" name="q8" id="q8" value="0"></td><td><h1>Never.<h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q9">
         <div class="question_text"><h1>9. What was your first console?</h1></div>
         <table>
-          <tr><td><input type="radio" name="q9" value="2"></td><td><h1>Xbox.</h1></td></tr>
-          <tr><td><input type="radio" name="q9" value="2"></td><td><h1>Ps4.</h1></td></tr>
-          <tr><td><input type="radio" name="q9" value="3"></td><td><h1>Computer.</h1></td></tr>
-          <tr><td><input type="radio" name="q9" value="0"></td><td><h1>A phone</h1></td></tr>
+          <tr><td><input type="radio" name="q9" id="q9" value="2"></td><td><h1>Xbox.</h1></td></tr>
+          <tr><td><input type="radio" name="q9" id="q9" value="2"></td><td><h1>Ps4.</h1></td></tr>
+          <tr><td><input type="radio" name="q9" id="q9" value="3"></td><td><h1>Computer.</h1></td></tr>
+          <tr><td><input type="radio" name="q9" id="q9" value="0"></td><td><h1>A phone</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q10">
         <div class="question_text"><h1>10. My work or grades suffer because of the time I spend playing games.</h1></div>
         <table>
-          <tr><td><input type="radio" name="q10" value="3"</td><td><h1>Strongly agree.</h1></td></tr>
-          <tr><td><input type="radio" name="q10" value="2"</td><td><h1>agree.</h1></td></tr>
-          <tr><td><input type="radio" name="q10" value="0"</td><td><h1>Strongly disagree.</h1></td></tr>
-          <tr><td><input type="radio" name="q10" value="1"</td><td><h1>Sometimes.</h1></td></tr>
+          <tr><td><input type="radio" name="q10" id="q10" value="3"</td><td><h1>Strongly agree.</h1></td></tr>
+          <tr><td><input type="radio" name="q10" id="q10" value="2"</td><td><h1>agree.</h1></td></tr>
+          <tr><td><input type="radio" name="q10" id="q10" value="0"</td><td><h1>Strongly disagree.</h1></td></tr>
+          <tr><td><input type="radio" name="q10" id="q10" value="1"</td><td><h1>Sometimes.</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q11">
         <div class="question_text"><h1>11. I have a lot of friends through gaming?</h1></div>
         <table>
-          <tr><td><input type="radio" name="q11" value="1"</td><td><h1>My friends play the same game as me.</h1></td></tr>
-          <tr><td><input type="radio" name="q11" value="2"</td><td><h1>Agree.</h1></td></tr>
-          <tr><td><input type="radio" name="q11" value="3"</td><td><h1>Strongly agree.</h1></td></tr>
-          <tr><td><input type="radio" name="q11" value="0"</td><td><h1>Nope.</h1></td></tr>
+          <tr><td><input type="radio" name="q11" id="q11" value="1"</td><td><h1>My friends play the same game as me.</h1></td></tr>
+          <tr><td><input type="radio" name="q11" id="q11" value="2"</td><td><h1>Agree.</h1></td></tr>
+          <tr><td><input type="radio" name="q11" id="q11" value="3"</td><td><h1>Strongly agree.</h1></td></tr>
+          <tr><td><input type="radio" name="q11" id="q11" value="0"</td><td><h1>Nope.</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q12">
         <div class="question_text"><h1>12. I spend a lot of time thinking about my next gaming experience.</h1></div>
         <table>
-          <tr><td><input type="radio" name="q12" value="0"</td><td><h1>Never.</h1></td></tr>
-          <tr><td><input type="radio" name="q12" value="3"</td><td><h1>Strongly agree.</h1></td></tr>
-          <tr><td><input type="radio" name="q12" value="1"</td><td><h1>Neutral.</h1></td></tr>
-          <tr><td><input type="radio" name="q12" value="2"</td><td><h1>Agree.</h1></td></tr>
+          <tr><td><input type="radio" name="q12" id="q12" value="0"</td><td><h1>Never.</h1></td></tr>
+          <tr><td><input type="radio" name="q12" id="q12" value="3"</td><td><h1>Strongly agree.</h1></td></tr>
+          <tr><td><input type="radio" name="q12" id="q12" value="1"</td><td><h1>Neutral.</h1></td></tr>
+          <tr><td><input type="radio" name="q12" id="q12" value="2"</td><td><h1>Agree.</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q13">
         <div class="question_text"><h1>13. Why do you play video games?</h1></div>
         <table>
-          <tr><td><input type="radio" name="q13" value="3"</td><td><h1>To beat everybody on the game.</h1></td></tr>
-          <tr><td><input type="radio" name="q13" value="2"</td><td><h1>To do the best I can.</h1></td></tr>
-          <tr><td><input type="radio" name="q13" value="0"</td><td><h1>Because other people told me to.</h1></td></tr>
-          <tr><td><input type="radio" name="q13" value="1"</td><td><h1>To have fun.</h1></td></tr>
+          <tr><td><input type="radio" name="q13" id="q13" value="3"</td><td><h1>To beat everybody on the game.</h1></td></tr>
+          <tr><td><input type="radio" name="q13" id="q13" value="2"</td><td><h1>To do the best I can.</h1></td></tr>
+          <tr><td><input type="radio" name="q13" id="q13" value="0"</td><td><h1>Because other people told me to.</h1></td></tr>
+          <tr><td><input type="radio" name="q13" id="q13" value="1"</td><td><h1>To have fun.</h1></td></tr>
         </table>
       </div>
 
       <div class="question_box" id="q14">
         <div class="question_text"><h1>14. What's your highest gaming accomplishment?</h1> </div>
         <table>
-          <tr><td><input type="radio" name="q14" value="0"</td><td><h1>Completed the story mode.</h1> </td></tr>
-          <tr><td><input type="radio" name="q14" value="3"</td><td><h1>The top rank in a game.</h1></td></tr>
-          <tr><td><input type="radio" name="q14" value="2"</td><td><h1>I have earned every achevement/trophy.</h1></td></tr>
-          <tr><td><input type="radio" name="q14" value="1"</td><td><h1>Get the most points in a match.</h1></td></tr>
+          <tr><td><input type="radio" name="q14" id="q14" value="0"</td><td><h1>Completed the story mode.</h1> </td></tr>
+          <tr><td><input type="radio" name="q14" id="q14" value="3"</td><td><h1>The top rank in a game.</h1></td></tr>
+          <tr><td><input type="radio" name="q14" id="q14" value="2"</td><td><h1>I have earned every achevement/trophy.</h1></td></tr>
+          <tr><td><input type="radio" name="q14" id="q14" value="1"</td><td><h1>Get the most points in a match.</h1></td></tr>
         </table>
       </div>
-  	</div>
-
-    <h1>Fill in your name<h1>
-
-  <form action="demo_form.asp" method="post">
-  <input type="text" name="fname" required>
-  <input type="submit" value="Submit">
-</form>
-
-	</body>
+      <input id="submit_btn" type="submit" value="submit">
+  	</form>
+  </div>
+	
+  </body>
 	<script>
 	$(document).ready(function () {
 	$('form').on('submit', function (event) {
@@ -217,8 +212,49 @@
 	});
 });			
 	</script>
+  <script>
+$(function() {
+  $("form[name='questions']").validate({
+    rules: {
+      'q1[]':{required:true},
+      q2: "required",
+      q3: "required",
+      q4: "required",
+      q5: "required",
+      q6: "required",
+      q7: "required",
+      q8: "required",
+      q9: "required",
+      q10: "required",
+      q11: "required",
+      q12: "required",
+      q13: "required",
+      q14: "required"
+    },
+    messages: {
+      q1: "Please enter your option",
+      q2: "Please enter your option",
+      q3: "Please enter your option",
+      q4: "Please enter your option",
+      q5: "Please enter your option",
+      q6: "Please enter your option",
+      q7: "Please enter your option",
+      q8: "Please enter your option",
+      q9: "Please enter your option",
+      q10: "Please enter your option",
+      q11: "Please enter your option",
+      q12: "Please enter your option",
+      q13: "Please enter your option",
+      q14: "Please enter your option"
 
- </html>
+    },
+    submitHandler: function(form) {
+      form.submit();
+    }
+  });
+});
+</script>
+</html>
 
 
 
